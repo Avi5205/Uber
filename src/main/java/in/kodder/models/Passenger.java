@@ -13,7 +13,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Passenger extends BaseModel{
+public class Passenger extends BaseModel {
 
     private String name;
 

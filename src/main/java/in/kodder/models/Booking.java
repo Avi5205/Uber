@@ -12,9 +12,9 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 public class Booking extends BaseModel {
-
     @OneToOne(cascade = CascadeType.ALL)
-    private Review review;
+    @JoinColumn(name = "reviews_id")
+    private Review reviews;
 
     @Enumerated(EnumType.STRING)
     private BookingStatus bookingStatus;
